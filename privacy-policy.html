@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Construyendo Valores Studio</title>
+<style>
+  body { font-family: "Segoe UI", Arial, sans-serif; margin: 0; background: #f6f7fb; color: #22333b; }
+  header { background: #2f4f6f; color: #fff; padding: 30px 20px; text-align: center; }
+  header h1 { margin: 0; font-size: 30px; }
+  main { max-width: 860px; margin: 26px auto; padding: 0 20px; }
+  .card { background: #fff; border-radius: 12px; padding: 22px 30px; margin-bottom: 18px;
+          box-shadow: 0 1px 3px rgba(0,0,0,.10); }
+  h2 { color: #2f4f6f; font-size: 21px; margin-top: 4px; }
+  ul { line-height: 1.7; }
+  .fecha { color: #77828a; font-size: 14px; }
+  footer { text-align: center; padding: 22px; color: #77828a; font-size: 14px; }
+  a { color: #1e6f9f; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Política de privacidad</h1>
+  <p class="fecha" style="color:#dfe9f2;">Construyendo Valores Studio · Última actualización: 8 de septiembre de 2026</p>
+</header>
+<main>
+
+  <div class="card">
+    <h2>1. Resumen</h2>
+    <p>Construyendo Valores Studio es una aplicación de escritorio de un solo usuario. La usa únicamente
+    el creador del canal de YouTube <strong>Construyendo Valores</strong> para producir videos infantiles
+    educativos originales y publicarlos en su propio canal. La aplicación no está disponible para otros
+    usuarios, no contiene anuncios y no vende ni comparte datos.</p>
+  </div>
+
+  <div class="card">
+    <h2>2. Uso de los servicios de la API de YouTube</h2>
+    <p>Esta aplicación utiliza la <strong>YouTube Data API v3</strong> de Google. Al usarla, el usuario
+    acepta las <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">Condiciones del
+    Servicio de los Servicios de la API de YouTube</a> y la
+    <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>.</p>
+    <p>La funcionalidad de la aplicación que usa la API de YouTube es: subir videos al canal autorizado,
+    programar su publicación, elegir su privacidad (público, privado u oculto) y consultar el estado de
+    los videos del canal.</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Qué información accedemos, guardamos y usamos</h2>
+    <p>La aplicación solo accede a los datos del propio usuario (el dueño del canal) a través de
+    OAuth 2.0:</p>
+    <ul>
+      <li>Nombre e identificador del canal autorizado.</li>
+      <li>Lista de videos del canal y su estado de privacidad.</li>
+      <li>Metadatos (título, descripción, etiquetas) de los videos que la aplicación crea y publica.</li>
+    </ul>
+    <p>La aplicación también guarda en el disco duro de la computadora del usuario un archivo local con
+    los tokens de acceso y actualización que Google emite al autorizar, junto con la configuración del
+    proyecto (por ejemplo, la privacidad por defecto de las subidas). Este archivo no sale de esa
+    computadora.</p>
+  </div>
+
+  <div class="card">
+    <h2>4. Cómo se procesa y comparte la información</h2>
+    <p>Las operaciones sobre YouTube (subir, programar, cambiar privacidad, consultar estado) se envían
+    directamente a la API de YouTube con la autorización del usuario y solo afectan al propio canal del
+    usuario. Los datos no se comparten con terceros internos ni externos: ni se venden, ni se alquilan,
+    ni se transfieren a otros servicios. La aplicación no muestra anuncios de terceros y no coloca
+    cookies ni tecnologías de seguimiento.</p>
+  </div>
+
+  <div class="card">
+    <h2>5. Reducción del alcance y transparencia</h2>
+    <p>La aplicación solicita los permisos (alcances) mínimos necesarios para su función e indica
+    siempre el estado de privacidad elegido antes de cada subida. El usuario conserva el control total:
+    ninguna acción se ejecuta sin su consentimiento explícito.</p>
+  </div>
+
+  <div class="card">
+    <h2>6. Retención y eliminación de datos</h2>
+    <p>Los tokens guardados localmente se conservan únicamente mientras el usuario usa la aplicación.
+    Para eliminar esos datos alcanza con borrar de la computadora la carpeta de configuración de la
+    aplicación (archivo <em>youtube_tokens.json</em>) o revocar el acceso.</p>
+    <p>Además de cualquier procedimiento de borrado de la aplicación, el usuario puede revocar el acceso
+    de Construyendo Valores Studio a sus datos de Google/YouTube en cualquier momento desde la página de
+    seguridad de Google:
+    <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.
+    Al revocar el acceso, la aplicación deja de poder actuar sobre el canal.</p>
+  </div>
+
+  <div class="card">
+    <h2>7. Protección de datos de niños</h2>
+    <p>La aplicación no recopila, almacena ni procesa información personal de niños ni de ninguna persona
+    que vea los videos. Los videos producidos se marcan como "hechos para niños" (Made for Kids, valor
+    <em>selfDeclaredMadeForKids: true</em>) conforme a la política de la plataforma.</p>
+  </div>
+
+  <div class="card">
+    <h2>8. Contacto</h2>
+    <p>Ante cualquier duda o reclamo sobre estas prácticas de privacidad, puedes escribir al responsable
+    de la aplicación a la dirección de correo del canal: <strong>construyendovalores@gmail.com</strong>
+    (reemplaza con la dirección de correo que uses para el canal).</p>
+  </div>
+
+</main>
+<footer>
+  Este sitio usa la Google Privacy Policy, disponible en
+  <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.
+</footer>
+</body>
+</html>
