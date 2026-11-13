@@ -13,9 +13,10 @@
   .card { background: #fff; border-radius: 12px; padding: 22px 28px; margin-bottom: 18px;
           box-shadow: 0 1px 3px rgba(0,0,0,.10); }
   h2 { color: #2f6f4f; font-size: 22px; margin-top: 0; }
-  ul { line-height: 1.7; }
+  ul, ol { line-height: 1.7; }
   footer { text-align: center; padding: 22px; color: #77828a; font-size: 14px; }
   a { color: #1e6f9f; }
+  .fecha { color: #77828a; font-size: 14px; }
 </style>
 </head>
 <body>
@@ -27,29 +28,62 @@
   <div class="card">
     <h2>Qué es</h2>
     <p>Construyendo Valores Studio es una aplicación de escritorio gratuita que ayuda a su creador a
-    producir contenido original para niños —cuentos con valores y canciones infantiles (rondas) con
-    karaoke— y a publicarlo en su propio canal de YouTube <strong>Construyendo Valores</strong>.</p>
-    <p>La aplicación está pensada para un solo usuario: el dueño del canal. No se ofrece al público,
-    no tiene anuncios y no recopila información de personas que ven los videos.</p>
+    producir contenido original para niños —cuentos con valores y canciones infantiles— y a publicarlo en su
+    propio canal de YouTube <strong>Construyendo Valores</strong>.</p>
+    <p>La aplicación está pensada para <strong>un solo usuario: el dueño del canal</strong>. No se ofrece al
+    público, no tiene anuncios, no tiene registro de usuarios y no recopila información de las personas que
+    ven los videos.</p>
   </div>
+
   <div class="card">
     <h2>Lo que hace con YouTube</h2>
     <ul>
-      <li>Usa la <strong>YouTube Data API</strong> (v3) para subir videos al canal del propio usuario.</li>
+      <li>Usa la <strong>YouTube Data API v3</strong> para subir videos al canal del propio usuario.</li>
       <li>Permite elegir la privacidad de cada subida: público, privado u oculto.</li>
-      <li>Permite programar la hora de publicación y consultar el estado de los videos del canal.</li>
+      <li>Permite programar la fecha y hora de publicación (<code>publishAt</code>).</li>
+      <li>Consulta el estado y las estadísticas de los videos del propio canal.</li>
+      <li>Actualiza los metadatos (título, descripción, etiquetas, categoría) de sus propios videos.</li>
       <li>Solo actúa sobre el canal autorizado por el dueño mediante OAuth 2.0.</li>
     </ul>
   </div>
+
+  <div class="card">
+    <h2>Cómo se autoriza</h2>
+    <ol>
+      <li>El dueño del canal abre la aplicación y ejecuta el comando de autorización.</li>
+      <li>La aplicación abre la pantalla de consentimiento de Google en el navegador.</li>
+      <li>El dueño elige su cuenta de Google y su canal de YouTube, y acepta el permiso
+      <code>https://www.googleapis.com/auth/youtube</code>.</li>
+      <li>Google devuelve un código a un servidor local (<code>http://localhost</code>) y la aplicación lo
+      canjea por un token de acceso y uno de actualización.</li>
+      <li>Los tokens se guardan únicamente en el disco de esa computadora.</li>
+    </ol>
+    <p>El acceso se puede revocar en cualquier momento desde
+    <a href="https://security.google.com/settings/security/permissions">la página de seguridad de Google</a>.</p>
+  </div>
+
+  <div class="card">
+    <h2>Privacidad y datos</h2>
+    <p>La aplicación no vende, alquila ni comparte datos. No usa los datos de YouTube para publicidad,
+    perfilado ni para entrenar modelos de inteligencia artificial. El detalle completo está en la
+    <a href="privacy-policy.html">Política de privacidad</a>.</p>
+  </div>
+
   <div class="card">
     <h2>Documentos</h2>
     <ul>
       <li><a href="privacy-policy.html">Política de privacidad</a></li>
+      <li><a href="terms.html">Condiciones del servicio</a></li>
     </ul>
+  </div>
+
+  <div class="card">
+    <h2>Contacto</h2>
+    <p><strong>menesesdavian1@gmail.com</strong></p>
   </div>
 </main>
 <footer>
-  Canal: Construyendo Valores
+  Canal: Construyendo Valores · Última actualización: 12 de noviembre de 2026
 </footer>
 </body>
 </html>
