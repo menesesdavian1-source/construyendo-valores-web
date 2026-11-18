@@ -17,6 +17,11 @@
   footer { text-align: center; padding: 22px; color: #77828a; font-size: 14px; }
   a { color: #1e6f9f; }
   .fecha { color: #77828a; font-size: 14px; }
+  nav.doc { background: #fff; border-bottom: 1px solid #e3e7ee; text-align: center; padding: 12px 10px; }
+  nav.doc a { margin: 0 14px; font-weight: 600; text-decoration: none; font-size: 16px; }
+  nav.doc a:hover { text-decoration: underline; }
+  .yt { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; }
+  .yt span { font-size: 22px; font-weight: 700; letter-spacing: -.5px; color: #22333b; }
 </style>
 </head>
 <body>
@@ -24,7 +29,30 @@
   <h1>Construyendo Valores Studio</h1>
   <p>Herramienta personal para crear y publicar videos infantiles educativos</p>
 </header>
+
+<nav class="doc">
+  <a href="privacy-policy.html">Política de privacidad</a>
+  <a href="terms.html">Condiciones del servicio</a>
+  <a href="#youtube">Servicios de YouTube</a>
+</nav>
+
 <main>
+  <div class="card" id="youtube">
+    <div class="yt">
+      <svg width="42" height="30" viewBox="0 0 28 20" role="img" aria-label="YouTube">
+        <rect x="0" y="0" width="28" height="20" rx="4.6" fill="#FF0000"></rect>
+        <polygon points="11.2,5.8 11.2,14.2 18.4,10" fill="#FFFFFF"></polygon>
+      </svg>
+      <span>YouTube</span>
+    </div>
+    <h2>Servicios de YouTube</h2>
+    <p>Esta aplicación <strong>utiliza los Servicios de API de YouTube</strong>. Al usarla aceptas quedar
+    vinculado por las <a href="https://www.youtube.com/t/terms">Condiciones del servicio de YouTube</a>.
+    El tratamiento de los datos de usuario de Google se describe en la
+    <a href="privacy-policy.html">Política de privacidad</a>, que incluye el enlace a la
+    <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>, las políticas de
+    retención y eliminación y la forma de revocar el acceso en cualquier momento.</p>
+  </div>
   <div class="card">
     <h2>Qué es</h2>
     <p>Construyendo Valores Studio es una aplicación de escritorio gratuita que ayuda a su creador a
